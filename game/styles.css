@@ -1,0 +1,30 @@
+/* Double Take page shell: a full-window dark stage with the canvas centered. */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #0d101c;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game {
+  display: block;
+  touch-action: none;
+}
+
+/* Read aloud by screen readers, never shown. */
+#status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
